@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         // marginHorizontal: 20,
         // margin : 20 , 
         flex: 1,
-
+// flex == % ใน 100 เช่นมี 3 กล่อง เฟลก 20 20 60  = กล่อง 1 2 ขนาด 20 เปอ กล่อง 3 จะใหญ่สุด 60 
     },
 });
 

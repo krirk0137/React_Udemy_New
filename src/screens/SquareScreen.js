@@ -68,6 +68,7 @@ const reducer = (state, action) => {
 const SquareScreen = () => {
     const [state,dispatch] = useReducer(reducer, { red: 0 , green : 0 , blue : 0});
     const {red,green,blue} = state;
+    
     // const [state,runMyReducer]
     // console.log(state)
     // const [red, setRed] = useState(0);
@@ -97,7 +98,8 @@ const SquareScreen = () => {
 
             <View 
                 style={{ height: 150, width:150 , backgroundColor: `rgb(${state.red},${state.green},${state.blue})`}}
-            />    
+            />   
+            <Text> ${state.red} ${state.green} ${state.blue}</Text> 
     
         </View>
     );

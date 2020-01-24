@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": null,
-  "packagerPid": null,
+  "packagerPort": 19001,
+  "packagerPid": 18408,
   "expoServerNgrokUrl": "https://5q-fnw.anonymous.react-udemy-new.exp.direct",
   "packagerNgrokUrl": "https://packager.5q-fnw.anonymous.react-udemy-new.exp.direct",
-  "ngrokPid": 23440
+  "ngrokPid": 21392
 }
