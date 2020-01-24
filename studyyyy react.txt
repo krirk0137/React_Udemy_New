@@ -1,0 +1,318 @@
+react native couse udemy 
+sec1
+https://www.udemy.com/course/the-complete-react-native-and-redux-course/learn/lecture/15740260#overview
+C:\xampp\htdocs\ReactUdemyCourse
+
+node fix error 
+https://www.udemy.com/course/the-complete-react-native-and-redux-course/learn/lecture/16670590#overview
+Solution #1 - Edit the blacklist.js file
+Solution #2 - Downgrade Node
+Solution #3 - Use a Node Version Manager:
+
+complete code repo 
+https://github.com/StephenGrider/rn-casts
+
+npm start ด้วยจ้า 
+
+-a lot of stuff learn , show dev full , ton of little app , make big app 
+- test on fake android , real android 
+
+-download rn-starter.zip  > cmd to folder rn  , npm install , npm start  , expo app connect , fix error  node_modules/metro-config/src/defaults/blacklist.js 
+
+var sharedBlacklist = [
+  /node_modules[\/\\]react[\/\\]dist[\/\\].*/,
+  /website\/node_modules\/.*/,
+  /heapCapture\/bundle\.js/,
+  /.*\/__tests__\/.*/
+];
+
+full finish 
+
+github , vscode ,  ctrl + shift + p  , git clone , https://github.com/krirk0137/React_Udemy_New.git ,  C:\xampp\htdocs\React_Udemy_New , 
+https://www.youtube.com/watch?v=9cMWR-EGFuY yeAH 
+
+
+
+----------------------------------------------------------------
+sec2
+
+git init ด้วยจ้า 
+https://bitbucket.org/krirk0137gmail/reactudemynative/commits/
+https://www.androidthai.in.th/git-and-github-article/191-github-on-vs-code.html วิธีใช้ git 
+git remote add origin https://krirk0137gmail@bitbucket.org/krirk0137gmail/reactudemynative.git
+git push -u origin master.
+git add -A
+git commit 
+
+เปิด terminal และรันคำสั่ง gem install rails -v 4.2.10
+สร้าง rails project ด้วยคำสั่ง rails new app -T
+เปลี่ยน directory ไปที่ app ด้วยคำสั่ง cd app
+รันคำสั่ง rails server -p $PORT -b $IP และเปิดหน้าเว็บเพื่อทดสอบว่า app ทำงานได้ หลังจากนั้นยกเลิก server ด้วย ctrl-c
+ตั้งค่า user ด้วยคำสั่ง git config --global user.name "your-name" เปลี่ยน your-name เป็นชื่อของตัวเอง
+ตั้งค่า email ด้วยคำสั่ง git config --global user.email "your-email" เปลี่ยน your-email เป็นของตัวเอง
+สร้าง git ด้วยคำสั่ง git init
+เชื่อมกับ remote repository ด้วยคำสั่ง git remote add hw0 git@bitbucket.org:dr-jack/studentid.git เปลี่ยน studentid เป็นรหัสนักศึกษาของตนเอง
+เมื่อต้องการส่งงานให้ดำเนินการดังนี้
+
+git add -A
+
+git commit -am "finish"
+
+git checkout -fb hw0
+
+git push -u hw0 hw0
+
+--
+git add -A
+
+git commit -am "<your note>"
+
+git push -u hw1 hw1
+--
+git add -A
+
+git commit -am "finish"
+
+git push -u hw1 hw1
+--
+git push -u origin master
+--
+OK this link V 
+https://medium.com/@thanatchakromsang/%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89-git-%E0%B9%81%E0%B8%A5%E0%B8%B0-github-%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%94%E0%B9%87%E0%B8%81%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2-7311034c6527
+
+dont know 
+https://medium.com/open-source-technology/git-%E0%B9%80%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99-git-e8f873a4fdc
+
+--
+
+เมื่อรันคำสั่ง git status จะต้องได้สถานะเป็น nothing to commit, working directory clean
+
+
+
+Text  > style sheet > variable , const 
+
+
+-ศร้าง componentsScreen  ( custom component) 
+- run ไปหน้า custom component 
+	text > primitive (react element)
+	html > JSX 
+	appNavigator-app.js > library React 
+	styles > StyleSheet.create()
+	Text > some text 
+	View > group element 
+	Image > picture 
+	Button > can press 
+-Rule of JSX ลอง const  ใน componentsscreen
+-ลองใช้ style 
+
+*----------------------------------------------------------------
+sec 3 List 
+ListScreen  > array  to list > prop to data > FlatList Element
+-ลองสร้าง list component
+-เริ่ม Flatlist      Array obj   name : 1, 2 , 3 ,4 
+-turn array to list element > prop of data aray  > renderItem prop , mapping Flatlist better with RN 
+-FlatList > Key Property 
+	            horizontal={true}	 แนวนอนอย่างเดียว
+            showsHorizontalScrollIndicator={false}	 ไม่เเสดงบาร์เลื่อน
+-keypropetty , age array 
+
+---------------------------------------------
+sec 4 button
+
+- import { createAppContainer, createStackNavigator } from 'react-navigation';
++ import { createAppContainer } from 'react-navigation';
++ import { createStackNavigator } from 'react-navigation-stack';
+ด้านบนแบบใหม่
+ปุ่มแบบปุ่ม
+กับปุ่มแบบ touch 
+
+  // const HomeScreen = props => {
+
+      {/* <Button
+        title="Go to List bro"
+        onPress={() => props.navigation.navigate('List')}
+      /> */}
+	  
+	--
+	const HomeScreen = ({navigation}) => {
+
+      <Button
+        title="Go to List bro"
+        onPress={() => navigation.navigate('List')}
+      />
+	  
+-Button press 
+-TouchableOpacity touch 
+
+React Navigation Fix
+	npx expo-cli install react-native-gesture-handler react-native-reanimated react-navigation-stack@1.10.3
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+
+-button navigate 
+------------------------------------------------------------
+sec5 reuse able component
+
+image มาเเล้วเเต่ว่า ล้นจอเลื่อนลงไม่ได้สะงั้น 
+-components reuse props   image style 
+	create imageScree > add in app.js  > add button home 
+สร้าง component folder  ImageDetail > ต้นแบบ ImageScreen 
+image screen > add imageDetail 
+
+ใส่ภาพ คะแนน สร้าง component ย่อย ส่งค่า props ไปให้อีก component 
+picscreen sent data > pic detail  
+
+
+----------------------------------------------------------
+sec 6 state component 
+
+ไม่แก้ไขค่าโดยตรงต้องใช้ function setter 
+
+3 Q 
+what piece data change   ex   colors
+what type data 			 ex   array of string 
+what default data start  ex   []  
+
+ไอสั ` backquote เล่นกุละ
+ต้องหัดเปลีย่นภาษาด้วย  alt + shift 
+
+... =  เอาทุกๆอย่างๆมาใส่เช่น    ...color , randomRgb     
+เอาทุกค่าใน เเลนด้อมมาเก็บไว้ใน  color   เป็นอาเรย์ ไปเรื่อยๆ 
+
+        {/* if not say " count = state , just use state.count" */}
+
+-Props system pass data from parent to child
+-State track piece data change overtime , if data change app will rerender
+
+increase decrease current count 
+	piece data change - counter
+	type data - number 
+	default data - 0 
+	
+enter name , your name is 
+	piece data change - name 
+	type - string
+	defauklt data "", ''
+
+blog post 
+		piece data change - blogPosts 
+		type - array 
+		default  - []
+		
+useState counter > setCounter 
+	ห้ามเปลี่ยนค่า counter โดยตรงต้องใช้ setCounter 
+	
+Appstart > CounterScreen state counter = 0
+		 > tap Increase , decreast 
+		 > onPress > setCounter , update value 
+		 >react rerender , rerun counterscreen
+		 > CounterScreen run again but counter is not new 
+		 > counter old +1 , -1  
+		 > return some JSX update counter var 
+		 
+we use fuction base state in fuction components , react has class base component access state
+we never direct modify state variable , react doesn't detect change , use setter function
+We can name state variable 
+We can tract any kind data change overtime , num , str , array , etc 
+When Component rerender , all child rerender too 
+State variable  can pass to child component 
+
+colorboxscreen - rgb(0,0,0) 
+			data change - colors
+			type - array of strings
+			default - [] 
+
+random color 
+...colors, randomRgb()
+...colors = เอาทุกอย่างใส่ใน colors 
+ 
+ color Flatlist
+ 
+change color on 1 box 
+	data  change r g b 
+	type 	number
+	default 255 
+
+Square > onChange red Color Counter
+		 onChange g Color Counter
+		 onChange b Color Counter
+		 
+Quick thoughts 
+		App ok 
+		We have Three separet r g b 
+		For this app , three piece state }	reducer 
+		update values 					 }
+		
+Reducer > function that manage change to object 
+		Fancy name 
+		call two obj
+		Argument obj all our state  ( r 0 g 0 b 0)
+									const state = r 0 g 0 b 0 , state red = red + 10 
+		Argument obj update 		( color to change red , 15)
+		Ar 2 change Ar 1 
+		we not change direct Ar 1 , we return Ar 1 
+		
+Only myself 
+	colorToChange red amount 15
+Usually world
+	type: Change_red	payload 15 
+	type = operation change 
+	payload = data change 
+counter to reducer 
+
+text input 
+password input
+ใส่ autocapitalize false and autoCorrect none
+		value = ค่า name 
+		onchangetext = newvalue = settext newvalue  เปลี่ยนค่าให้มัน 
+		
+--------------------
+section 7 
+layout system 
+		-box obj model 
+		-flex box 
+		-position 
+		
+		-box obj model      Margin  ห่างรอบนอก
+							Border	ขอบ
+							Padding	ห่างรอบใน 
+							Content		 Content + Padding background Color 
+				MarginTop		
+				borderTopWidth 	
+				paddingTOp		
+				height
+				content				marginLeft borderLeftWidth paddingLeft width(content) paddingRIght borderRightWidth marginRight 
+				height
+				paddingBottom
+				borderBottomWidth
+				MarginBottom
+		margin > set all side 
+		marginVertical > top bottom
+		marginHorizontal > left right 
+		padding > all side 
+		paddingVertical top bottom
+		paddingHorizontal left right 
+		borderWidth	> all side 
+		
+		alignitem: stretch  > เต็ม  default 
+		flex-start > ชิดซ้าย
+		center > กลาง 
+		flex-end ชิดขวา 
+		
+		flexDirection : column ลงมาเรื่อยๆ  default 
+		flexDirection : row  ซ้ายไปขวา
+
+		justifyContent: flex-start ชิดบน    center ชิดกลาง   flex-end ชิดล่าง 
+				space-between บน กลาง ล่าง ชิดขอบ 
+				space-around บน กลาง ล่าง เว้นขอบบนล่าง 
+				
+		Parent : alignItem , justifyContent , flexDirection 
+		Child : flex , alignSelf
+		
+		flex 1 on child 2  , on child 3 , on all child บลาๆ 
+		
+		flex = ขนาดความสำคัญ ยิ่งเลขเยอะยิ่งได้พื้นที่ใหญ่  ถึงจะ เลข 1 เเต่ถ้าตัวอื่นไม่มีเลขก็กาก 
+		
+		73 flex finish 
+		
+		
