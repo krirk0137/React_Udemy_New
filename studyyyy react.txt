@@ -314,5 +314,51 @@ layout system
 		flex = ขนาดความสำคัญ ยิ่งเลขเยอะยิ่งได้พื้นที่ใหญ่  ถึงจะ เลข 1 เเต่ถ้าตัวอื่นไม่มีเลขก็กาก 
 		
 		73 flex finish 
+
+parent								child 
+alignitem 							flex
+justifycontent						alignself 
+flexdirection 		
+
+alignself  use with child     
+					ALS flex-end ชิดขวา  
+			ALS center กลาง 
+	ALS flex start ชิดซ้าย 
+	strech = ยืดเต็ม 
+
+Position 	 
+	relative ความสัมพันธุ์ตาม obj แต่ละตัว 1 ต่อ 2 2ต่อ 3 
+	absolute อยู่แยกเดี่ยวไม่สัมพันธุ์ 1 2  3 กับคนอื่น 
+	
+	Top  เลื่อนลง ทับคนอื่น
+	bottom เลื่อนขึ้น  ทับคนอื่น
+	left	เลื่อนขวา
+	right   เลื่อนซ้าย 
+	
+	        // [position: 'absolute', 
+        // top: 0,
+        // bottom: 0,
+        // left: 0,
+        // right : 0,] combo   absolute ออกจากตัวอื่นแยกเดี่ยว  อยุ่ในกล่องใหญ่คนเดียวขึ้นไปบนสุด แล้ว top 0 b 0 l 0 r 0 = ไม่ห่างจากขอบใหญ่เลย คือเต็๋มจอ 
+		 = ...StyleSheet.absoluteFillObject
+		
+		Box Object Model =  singgle element 
+		Flex model 		=  multiple element 
+		Position 		= 	จัดตำแหน่งจ้า 
+		
+					Apply Box object model rule 
+						position Absolue ? 
+				No									Yes 
+		Apply all flex box 						Apply Flex  ,ignore sibing 
+		Place element inside parent				Apply top rig lef bot 
+		Apply top bot lef rig 
+		-------------------------------------------------
+	yarn add global expo-cli
+	npm update -g
+	npm i -g expo-cli@3.5.0
+	I had to uninstall expo cli first by running this command -> sudo npm -g uninstall expo-cli
+Then restart my computer
+Then execute this command sudo npm install --unsafe-perm -g expo-cli
+and it worked
 		
 		
